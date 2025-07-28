@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firas Hasni - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Header -->
+   <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">  <img src="assets/logo.png" alt="Logo" class="nav__logo-img">Firas Hasni</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <i class="fas fa-moon change-theme" id="theme-button"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header
+    <!-- Main -->
+    <main>
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <h1 class="home__title">Firas Hasni</h1>
+                    <h2 class="home__subtitle">Web Developer & AI Research Student</h2>
+                    <p class="home__description">Développeur web passionné spécialisé dans la création d'applications web modernes et performantes.</p>
+                    <div class="home__social">
+                        <a href="https://linkedin.com/in/firas-hosni-4450a01b4" target="_blank" class="home__social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="home__social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__image">
+                    <img src="assets/profile.png" alt="Firas Hasni" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <h2 class="section__title">À propos</h2>
+                <div class="about__content">
+                    <p class="about__description">
+                        Diplômé en sciences informatiques de la Faculté des Sciences de Bizerte, avec expertise en développement web, SEO, et frameworks modernes. Capable de gérer tout un projet, de la conception à la mise en ligne.
+                    </p>
+                    <div class="about__info">
+                        <div class="about__info-item">
+                            <h3 class="about__info-title">Expérience</h3>
+                            <ul class="about__info-list">
+                                <li>Développeur Web WordPress @ Webrank (2024)</li>
+                                <li>Stage Mémoire (2023–2024)</li>
+                                <li>Stage PFE (2020)</li>
+                            </ul>
+                        </div>
+                        <div class="about__info-item">
+                            <h3 class="about__info-title">Éducation</h3>
+                            <ul class="about__info-list">
+                                <li>Mastère en informatique (2021–2025)</li>
+                                <li>Licence fondamentale en informatique (2017–2020)</li>
+                                <li>Bac Mathématiques (2016–2017)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="skills__container container" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 class="section__title" style="text-align: center;">Compétences</h2>
+            <div class="skills__content" style="display: flex; justify-content: center; margin-top: 2rem;">
+                <div class="skills__group" style="display: flex; gap: 2rem; justify-content: center;">
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fab fa-html5" style="font-size: 2rem; color: #e34c26;"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fab fa-css3-alt" style="font-size: 2rem; color: #2965f1;"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fab fa-js-square" style="font-size: 2rem; color: #f7df1e;"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fab fa-react" style="font-size: 2rem; color: #61dafb;"></i>
+                    <span>React</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fab fa-vuejs" style="font-size: 2rem; color: #42b883;"></i>
+                    <span>Vue.js</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fab fa-node-js" style="font-size: 2rem; color: #68a063;"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fas fa-robot" style="font-size: 2rem; color: #6c63ff;"></i>
+                    <span>IA / Machine Learning</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fas fa-brain" style="font-size: 2rem; color: #ff6f61;"></i>
+                    <span>Deep Learning</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fas fa-cogs" style="font-size: 2rem; color: #00b894;"></i>
+                    <span>IA Automation (n8n)</span>
+                </div>
+                <div class="skills__item" style="display: flex; flex-direction: column; align-items: center;">
+                    <i class="fas fa-plug" style="font-size: 2rem; color: #fdcb6e;"></i>
+                    <span>MCP Integration</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="projects__container container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__content">
+                    <article class="projects__card">
+                        <img src="assets/project1.png" alt="NLP Tunisian Dialect Analyzer" class="projects__img">
+                        <div class="projects__data">
+                            <h3 class="projects__title">NLP Tunisian Dialect Analyzer</h3>
+                            <p class="projects__description">Analyse sentimentale et prétraitement avec IA/Deep Learning</p>
+                            <a href="https://github.com/Firashs01/NLP_project" class="projects__button" target="_blank">Voir le projet</a>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="assets/project2.png" alt="App Pharmacie" class="projects__img">
+                        <div class="projects__data">
+                            <h3 class="projects__title">App Pharmacie</h3>
+                            <p class="projects__description">Application de recherche de pharmacies avec intégration Google Maps</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+<section class="contact section" id="contact">
+    <div class="contact__container container">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__content">
+            <div class="contact__info">
+                <div class="contact__card">
+                    <i class="fas fa-envelope"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">firashosni35@gmail.com</span>
+                </div>
+                <div class="contact__card">
+                    <i class="fas fa-phone"></i>
+                    <h3 class="contact__card-title">Téléphone</h3>
+                    <span class="contact__card-data">+216 24 988 842</span>
+                </div>
+                <div class="contact__card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 class="contact__card-title">Location</h3>
+                    <span class="contact__card-data">Ariana, Tunis</span>
+                </div>
+            </div>
+
+            <!-- ✅ Updated Form using Formspree -->
+            <form action="https://formspree.io/f/mrblqprg" method="POST" class="contact__form">
+                <!-- Optional hidden inputs -->
+                <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+
+                <div class="contact__form-div">
+                    <input type="text" name="name" class="contact__form-input" placeholder="Votre nom" required>
+                </div>
+                <div class="contact__form-div">
+                    <input type="email" name="email" class="contact__form-input" placeholder="Votre email" required>
+                </div>
+                <div class="contact__form-div">
+                    <textarea name="message" class="contact__form-input contact__form-area" placeholder="Votre message" required></textarea>
+                </div>
+                <button class="contact__form-button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">&#169; Firas Hasni. Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
