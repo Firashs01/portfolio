@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website
 
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
@@ -82,3 +83,6 @@ Firas Hasni
 - Email: firashosni35@gmail.com
 - LinkedIn: [Firas Hosni](https://www.linkedin.com/in/firas-hosni-4450a01b4)
 
+=======
+# portfolio
+>>>>>>> f9e5d872e5f8a33d9d38ee6c2b78a558d6cfff24
