@@ -359,18 +359,25 @@ img {
     align-items: center;
 }
 
+.section__title {
+    text-align: center;
+}
+
 .skills__content {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 800px;
+    margin-top: 2rem;
 }
 
 .skills__group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* Adjusted for a more flexible layout on smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 2rem;
     width: 100%;
+    justify-content: center; /* Ensures items are centered within their grid cells */
 }
 
 .skills__item {
@@ -383,9 +390,49 @@ img {
 
 .skills__item i {
     font-size: 2rem;
-    color: var(--first-color);
+    /* Removed specific colors here to allow for individual color styling */
 }
 
+/* Individual skill icon colors */
+.skills__item .fa-html5 {
+    color: #e34c26;
+}
+
+.skills__item .fa-css3-alt {
+    color: #2965f1;
+}
+
+.skills__item .fa-js-square {
+    color: #f7df1e;
+}
+
+.skills__item .fa-react {
+    color: #61dafb;
+}
+
+.skills__item .fa-vuejs {
+    color: #42b883;
+}
+
+.skills__item .fa-node-js {
+    color: #68a063;
+}
+
+.skills__item .fa-robot {
+    color: #6c63ff;
+}
+
+.skills__item .fa-brain {
+    color: #ff6f61;
+}
+
+.skills__item .fa-cogs {
+    color: #00b894;
+}
+
+.skills__item .fa-plug {
+    color: #fdcb6e;
+}
 /*=============== PROJECTS ===============*/
 .projects__container {
     display: flex;
@@ -535,6 +582,14 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
+.skills__group {
+    display: grid;
+    /* This will be the default for large screens */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 2rem;
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
     .nav__menu {
         position: fixed;
@@ -560,6 +615,9 @@ img {
 
     .change-theme {
         margin-top: 1rem;
+        display: flex !important; /* Ensure theme button is always visible */
+        align-items: center;
+        justify-content: center;
     }
 
     .home__container {
@@ -580,7 +638,17 @@ img {
     }
 
     .skills__group {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Show one column for better mobile responsiveness */
+        gap: 1rem;
+    }
+
+    .projects__content {
+        grid-template-columns: 1fr; /* Show one column for better mobile responsiveness */
+        gap: 1rem;
+    }
+
+    .skills__group {
+        grid-template-columns: repeat(2, 1fr); /* Show two columns for tablets/medium mobiles */
     }
 }
 
@@ -599,7 +667,16 @@ img {
     }
 
     .skills__group {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .projects__content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .skills__group {
+        grid-template-columns: repeat(2, 1fr); /* Show one column for small mobiles */
         gap: 1rem;
     }
 } 
