@@ -615,9 +615,17 @@ img {
 
     .change-theme {
         margin-top: 1rem;
-        display: flex !important; /* Ensure theme button is always visible */
+        display: flex !important;
         align-items: center;
         justify-content: center;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: var(--z-fixed);
+        background: var(--container-color);
+        border-radius: 50%;
+        box-shadow: var(--header-shadow);
+        padding: 0.75rem;
     }
 
     .home__container {
@@ -638,17 +646,37 @@ img {
     }
 
     .skills__group {
-        grid-template-columns: 1fr; /* Show one column for better mobile responsiveness */
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
     .projects__content {
-        grid-template-columns: 1fr; /* Show one column for better mobile responsiveness */
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
     .skills__group {
-        grid-template-columns: repeat(2, 1fr); /* Show two columns for tablets/medium mobiles */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .change-theme {
+        display: flex; /* Make it visible */
+        font-size: 1.25rem;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: color .3s, transform .3s;
+        padding: 0.75rem 1.5rem; /* Add some horizontal padding */
+        border-radius: var(--border-radius); /* Example for a nice button look */
+        background: var(--container-color); /* Add a background */
+        box-shadow: var(--header-shadow); /* Add shadow */
+        margin-top: auto; /* Push it to the bottom if nav__list is at top */
+        padding: 0.5rem;
+        align-items: center;
+        background: transparent;/* Or remove margin-top: auto; if you want it after the last nav__item */
+    }
+
+    .change-theme:hover {
+        color: var(--first-color);
+        transform: rotate(30deg);
     }
 }
 
@@ -666,8 +694,10 @@ img {
         height: 250px;
     }
 
+    /* Keep only ONE of these .skills__group rules, depending on if you want 1 or 2 columns */
     .skills__group {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* For 1 column on very small screens */
+        /* Or: grid-template-columns: repeat(2, 1fr); for 2 columns */
         gap: 1rem;
     }
 
@@ -675,8 +705,29 @@ img {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    .skills__group {
-        grid-template-columns: repeat(2, 1fr); /* Show one column for small mobiles */
-        gap: 1rem;
+
+    .change-theme {
+        display: flex; /* Make it visible */
+        font-size: 1.25rem;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: color .3s, transform .3s;
+        padding: 0.75rem 1.5rem; /* Add some horizontal padding */
+        border-radius: var(--border-radius); /* Example for a nice button look */
+        background: var(--container-color); /* Add a background */
+        box-shadow: var(--header-shadow); /* Add shadow */
+        margin-top: auto; /* Push it to the bottom if nav__list is at top */
+        padding: 0.5rem;
+        align-items: center;
+        background: transparent;/* Or remove margin-top: auto; if you want it after the last nav__item */
     }
-} 
+
+    .change-theme:hover {
+        color: var(--first-color);
+        transform: rotate(30deg);
+    }
+}
+
+
+
+
