@@ -184,21 +184,22 @@
             </div>
 
             <!-- ✅ Updated Form using Formspree -->
-            <form action="https://formspree.io/f/mrblqprg" method="POST" class="contact__form">
-                <!-- Optional hidden inputs -->
-                <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+    <input type="hidden" name="access_key" value="8a973e5c-f0d5-4abb-862b-18eb81128101">
 
-                <div class="contact__form-div">
-                    <input type="text" name="name" class="contact__form-input" placeholder="Votre nom" required>
-                </div>
-                <div class="contact__form-div">
-                    <input type="email" name="email" class="contact__form-input" placeholder="Votre email" required>
-                </div>
-                <div class="contact__form-div">
-                    <textarea name="message" class="contact__form-input contact__form-area" placeholder="Votre message" required></textarea>
-                </div>
-                <button class="contact__form-button" type="submit">Envoyer</button>
-            </form>
+    <input type="hidden" name="subject" value="Nouveau message depuis le portfolio">
+
+    <div class="contact__form-div">
+        <input type="text" name="name" class="contact__form-input" placeholder="Votre nom" required>
+    </div>
+    <div class="contact__form-div">
+        <input type="email" name="email" class="contact__form-input" placeholder="Votre email" required>
+    </div>
+    <div class="contact__form-div">
+        <textarea name="message" class="contact__form-input contact__form-area" placeholder="Votre message" required></textarea>
+    </div>
+    <button class="contact__form-button" type="submit">Envoyer</button>
+</form>
         </div>
     </div>
 </section>
